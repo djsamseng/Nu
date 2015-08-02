@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nuApp" ng-controller="mainCtrl">
+    <head>
+        <meta charset="utf-8">
+        <title>Nu</title>
+        <link href="static/module/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="static/module/angular/angular.min.js"></script>
+        <script src="static/module/angular/angular-route.min.js"></script>
+    </head>
+    <body>
+        <ng-include src="'pages/navbar/navbar.html'">
+        </ng-include>
+        <div ng-view>
+        </div>
+        <ng-include src="'pages/modal/modal.html'">
+        </ng-include>
+        
+        <script src="static/module/jquery-1.11.3.min.js"></script>
+        <script src="static/module/bootstrap/js/bootstrap.min.js"></script>
+        <script src="static/js/nuApp.js"></script>
+        <script src="pages/navbar/navbarCtrl.js"></script>
+        <script src="pages/main/mainCtrl.js"></script>
+        <script src="pages/index/indexCtrl.js"></script>
+        </body>
+</html>
